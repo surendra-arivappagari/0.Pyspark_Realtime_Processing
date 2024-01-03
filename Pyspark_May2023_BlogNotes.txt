@@ -24,4 +24,4 @@
 	- Lets say we have 10 pyspark commands(transformations) done on dataframe. 
 	- 1 to 4 narrow transformations 4 to 5 wide transformation, 5 to 10 again narrow transformations are there then
 	  1-4 will be stage-1, 4-5 will be stage-2, 5 to 10 will be stage-3. So totally 3 stages created.
-**********************************************************************
+**********************************************************************-
