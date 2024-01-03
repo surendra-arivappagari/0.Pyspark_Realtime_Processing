@@ -1,0 +1,27 @@
+********************************************************************
+####  PySpark Blog: May2023:
+********************************************************************
+1). Once we submit spark application then below 2 progrms will be created in any resource management(YARN or any other).
+	- Driver (Master) program
+	- Executor (Slave) program
+	
+
+
+
+
+
+
+
+********************************************************************
+##### STAGE, TASK:
+*). TASK: 
+	- Each partition is called as TASK.
+	- let say we have a list with 256MB size then 2 partitions with 128MB size will crated. 
+	- So in this program 2 tasks has been created.
+	
+*). STAGE:
+	- Stage is nothing but collection of tasks.
+	- Lets say we have 10 pyspark commands(transformations) done on dataframe. 
+	- 1 to 4 narrow transformations 4 to 5 wide transformation, 5 to 10 again narrow transformations are there then
+	  1-4 will be stage-1, 4-5 will be stage-2, 5 to 10 will be stage-3. So totally 3 stages created.
+********************************************************************
